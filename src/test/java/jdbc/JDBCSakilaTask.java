@@ -7,19 +7,25 @@ import java.sql.SQLException;
 
 public class JDBCSakilaTask extends JDBCParent {
 
-    /* Sakila veritabanını kullanarak bir JDBC taskı oluşturabiliriz. Sakila,
-    MySQL örnek veritabanlarından biridir ve film kiralama işlemlerini simüle eder.
-    Bu veritabanında film, oyuncu, müşteri ve kiralama gibi tablolar bulunmaktadır.
+    /**
+        Sakila veritabanını kullanarak bir JDBC taskı oluşturabiliriz. Sakila,
+        MySQL örnek veritabanlarından biridir ve film kiralama işlemlerini simüle eder.
+        Bu veritabanında film, oyuncu, müşteri ve kiralama gibi tablolar bulunmaktadır.
 
-     Bir JDBC taskı oluşturmak için aşağıdaki adımları izleyebiliriz:
+        Bir JDBC taskı oluşturmak için aşağıdaki adımları izleyebiliriz:
 
-     1.Veritabanına Bağlanma: Sakila veritabanına JDBC üzerinden bağlanacağız.
-     2.Film Listesini Almak: Veritabanından film listesini alacak ve konsola yazdıracağız.
-     3.Yeni Bir Müşteri Eklemek: Veritabanına yeni bir müşteri ekleyeceğiz.
-     4.Yeni müşteri kaydı sorgulama: Müşteri ekledikten sonra eklenen müşteriyi yazdırınız.
-     5.Bağlantıyı Kapatma: Son olarak, JDBC bağlantısını kapatacağız.
-     Bu adımları içeren bir Java programı oluşturalım:
- */
+        1.Veritabanına Bağlanma: Sakila veritabanına JDBC üzerinden bağlanacağız.
+
+        2.Film Listesini Almak: Veritabanından film listesini alacak ve konsola yazdıracağız.
+
+        3.Yeni Bir Müşteri Eklemek: Veritabanına yeni bir müşteri ekleyeceğiz.
+
+        4.Yeni müşteri kaydı sorgulama: Müşteri ekledikten sonra eklenen müşteriyi yazdırınız.
+
+        5.Bağlantıyı Kapatma: Son olarak, JDBC bağlantısını kapatacağız.
+
+        Bu adımları içeren bir Java programı oluşturalım:
+     */
     @Test
     public void test1() {
         try {
@@ -49,8 +55,7 @@ public class JDBCSakilaTask extends JDBCParent {
             int addressId = 44;
             int active = 1;
 
-            String customerInsertSql = "INSERT INTO customer (store_id, first_name, last_name, email, address_id, active) " +
-                    "VALUES (1, '" + firstName + "', '" + lastName + "', '" + email + "', " + addressId + ", " + active + ")";
+            String customerInsertSql = "INSERT INTO customer (store_id, first_name, last_name, email, address_id, active) " + "VALUES (1, '" + firstName + "', '" + lastName + "', '" + email + "', " + addressId + ", " + active + ")";
             statement.executeUpdate(customerInsertSql);
             System.out.println("\u001B[31m" + "\nYeni müşteri eklendi." + "\u001B[0m");
 
