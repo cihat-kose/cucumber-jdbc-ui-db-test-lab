@@ -1,5 +1,5 @@
 
-# TestingPractices: Cucumber, JDBC, UI and Database Automation
+Cucumber JDBC UI and Database Test Lab
 
 ![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
@@ -29,7 +29,7 @@
 
 ## 💡 Introduction
 
-The **TestingPractices: Cucumber, JDBC, UI and Database Automation** framework combines Cucumber for BDD, Selenium for UI testing, JDBC for database interactions, and TestNG for test execution. This robust automation solution is designed to facilitate thorough testing of both front-end and back-end aspects, with support for cross-browser compatibility and detailed reporting.
+The **cucumber-jdbc-ui-db-test-lab** framework combines Cucumber for BDD, Selenium for UI testing, JDBC for database interactions, and TestNG for test execution. This robust automation solution is designed to facilitate thorough testing of both front-end and back-end aspects, with support for cross-browser compatibility and detailed reporting.
 
 ## ✨ Features
 
@@ -70,7 +70,7 @@ Example `ScenarioResults.xlsx`:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ChatGTHB/TestingPractices_Cucumber_JDBC_UI_DB.git
+   git clone https://github.com/cihat-kose/cucumber-jdbc-ui-db-test-lab.git
    ```
 
 2. Open in IntelliJ IDEA:
@@ -119,7 +119,7 @@ To run tests in parallel, configure the `ParallelTest.xml` or use your own TestN
 ## 📂 Folder Structure
 
 ```plaintext
-TestingPractices_Cucumber_JDBC_UI_DB/
+cucumber-jdbc-ui-db-test-lab/
 │
 ├── src/
 │   ├── main/
