@@ -20,8 +20,8 @@ public class CampusApachePOISteps extends Parent {
 
     @When("Enter username and password and click button")
     public void enterUsernameAndPasswordAndClickButton() {
-        campus.mySendKeys(campus.username, "turkeyts");
-        campus.mySendKeys(campus.password, "Techno2025.%");
+        campus.mySendKeys(campus.username, "Campus25");
+        campus.mySendKeys(campus.password, "Campus.2524");
         campus.myClick(campus.loginButton);
     }
 
