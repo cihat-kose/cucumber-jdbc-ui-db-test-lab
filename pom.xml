@@ -48,20 +48,20 @@
             <scope>test</scope>
         </dependency>
 
-<!--        &lt;!&ndash; SLF4J API for logging (API only, requires implementation) &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.slf4j</groupId>-->
-<!--            <artifactId>slf4j-api</artifactId>-->
-<!--            <version>2.0.16</version>-->
-<!--        </dependency>-->
+        <!-- SLF4J API for logging (API only, requires implementation) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.16</version>
+        </dependency>
 
-<!--        &lt;!&ndash; SLF4J Simple Logger for simple, console-based logging (used during testing) &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.slf4j</groupId>-->
-<!--            <artifactId>slf4j-simple</artifactId>-->
-<!--            <version>2.0.16</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <!-- SLF4J Simple Logger for simple, console-based logging (used during testing) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.16</version>
+            <scope>test</scope>
+        </dependency>
 
         <!-- Log4j dependencies for logging configuration -->
         <dependency>
@@ -98,26 +98,26 @@
             <version>1.14.0</version>
         </dependency>
 
-<!--        &lt;!&ndash; Apache POI library for reading and writing Microsoft Office Excel files &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi</artifactId>-->
-<!--            <version>5.4.0</version>-->
-<!--        </dependency>-->
+        <!-- Apache POI library for reading and writing Microsoft Office Excel files -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.4.0</version>
+        </dependency>
 
-<!--        &lt;!&ndash; Apache POI library (OOXML version) for handling Excel files in .xlsx format &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.apache.poi</groupId>-->
-<!--            <artifactId>poi-ooxml</artifactId>-->
-<!--            <version>5.4.0</version>-->
-<!--        </dependency>-->
+        <!-- Apache POI library (OOXML version) for handling Excel files in .xlsx format -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.4.0</version>
+        </dependency>
 
-<!--        &lt;!&ndash; MySQL JDBC driver for database connection and interaction with MySQL databases &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>mysql</groupId>-->
-<!--            <artifactId>mysql-connector-java</artifactId>-->
-<!--            <version>8.0.33</version>-->
-<!--        </dependency>-->
+        <!-- MySQL JDBC driver for database connection and interaction with MySQL databases -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
 
         <!-- Remove Javafaker -->
         <!-- <dependency>

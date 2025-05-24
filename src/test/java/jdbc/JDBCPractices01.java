@@ -19,7 +19,7 @@ public class JDBCPractices01 {
 
         // 2)- We have chose the database -->
         // This information was added to hostUrl (/sakila); no other additional action was taken
-        // String hostUrl = "jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com/sakila";
+        // String hostUrl = "jdbc:mysql://demo.mersys.io:33906/sakila";
 
         // 3)- We opened the query screen
         Statement statement = connection.createStatement();
