@@ -7,7 +7,7 @@ import io.cucumber.testng.*;
                 tags = "@Smoke",
                 features = "src/test/java/features",
                 glue = "stepDefinitions",
-                plugin = {"html:target/site/cucumber-pretty.html"},
+                plugin = {"pretty", "html:target/site/cucumber-pretty.html"},
                 dryRun = false
         )
 
