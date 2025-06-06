@@ -9,39 +9,22 @@ public class JDBCPractices01 {
     @Test
     public void test1() throws SQLException {
 
-        // What is done to make a query work
-        String hostUrl = "jdbc:mysql://demo.mersys.io:33906/sakila";
-        String username = "admin";
-        String password = "Techno24Study.%=";
+        // Connection information
+        String hostUrl = System.getenv().getOrDefault("DB_URL", "jdbc:mysql://demo.mersys.io:33906/sakila");
+        String username = System.getenv().getOrDefault("DB_USER", "admin");
+        String password = System.getenv().getOrDefault("DB_PASSWORD", "Techno24Study.%=");
 
-        // 1)- We entered the connection information --> Connection information was set.
-        Connection connection = DriverManager.getConnection(hostUrl, username, password);
+        // Open connection, create statement and execute the query using
+        // try-with-resources so that all resources are closed automatically
+        try (Connection connection = DriverManager.getConnection(hostUrl, username, password);
+             Statement statement = connection.createStatement();
+             ResultSet resultTable = statement.executeQuery("select * from actor")) {
 
-        // 2)- We have chose the database -->
-        // This information was added to hostUrl (/sakila); no other additional action was taken
-        // String hostUrl = "jdbc:mysql://demo.mersys.io:33906/sakila";
-
-        // 3)- We opened the query screen
-        Statement statement = connection.createStatement();
-
-        // 4)- We wrote the query to query screen then I was run
-        ResultSet resultTable = statement.executeQuery("select * from actor");
-
-        // 5)- The results appeared below
-        resultTable.next(); // At this stage we have completed the first line
-
-        String name = resultTable.getString("first_name");
-        String lastName = resultTable.getString("last_name");
-        System.out.println("name = " + name);
-        System.out.println("lastName = " + lastName);
-
-        resultTable.next();
-
-        name = resultTable.getString("first_name");
-        lastName = resultTable.getString("last_name");
-        System.out.println("name = " + name);
-        System.out.println("lastName = " + lastName);
-
-        connection.close();
+            while (resultTable.next()) {
+                String name = resultTable.getString("first_name");
+                String lastName = resultTable.getString("last_name");
+                System.out.printf("Actor: %s %s%n", name, lastName);
+            }
+        }
     }
 }

@@ -1,11 +1,11 @@
 #Test Case 2: Foreign Currency Functionality
-#➢ ZeroBank sitesine gidiniz.
-#➢ Login olunuz
-#➢ Online Banking’e tıklayınız.
-#➢ Pay Bills’e tıklayınız.
-#➢ “Purchase Foreign Currency” tıklayınız.
-#➢ 3 farklı döviz türünden satın alınız.
-#➢ İşlemin başarıyla tamamlandığını doğrulayınız.
+#➢ Navigate to ZeroBank
+#➢ Log in
+#➢ Click Online Banking
+#➢ Click Pay Bills
+#➢ Click "Purchase Foreign Currency"
+#➢ Purchase three different currencies
+#➢ Verify that the transaction was successful
 
 Feature: Purchase Foreign Currency Functionality
 

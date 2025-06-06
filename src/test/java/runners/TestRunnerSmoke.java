@@ -6,7 +6,8 @@ import io.cucumber.testng.*;
         (
                 tags = "@Smoke",
                 features = {"src/test/java/features"},
-                glue = {"stepDefinitions"}
+                glue = {"stepDefinitions"},
+                plugin = {"pretty"}
         )
 
 public class TestRunnerSmoke extends AbstractTestNGCucumberTests {

@@ -10,7 +10,7 @@ import utilities.GWD;
                 tags = "@Smoke",
                 features = "src/test/java/features",
                 glue = "stepDefinitions",
-                plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
                 dryRun = false
         )
 
@@ -30,9 +30,6 @@ public class TestRunnerParallel extends AbstractTestNGCucumberTests {
         ExtentService.getInstance().setSystemInfo("Application Name", "Zero Bank");
         ExtentService.getInstance().setSystemInfo("Operating System Info", System.getProperty("os.name"));
         ExtentService.getInstance().setSystemInfo("Department", "QA");
-        ExtentService.getInstance().setSystemInfo("Ek Satır", "Açıklama");
-        ExtentService.getInstance().setSystemInfo("Ek Satır", "Açıklama");
-        ExtentService.getInstance().setSystemInfo("Ek Satır", "Açıklama");
-        ExtentService.getInstance().setSystemInfo("Ek Satır", "Açıklama");
+        ExtentService.getInstance().setSystemInfo("Extra Info", "Description");
     }
 }

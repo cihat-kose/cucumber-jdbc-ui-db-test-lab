@@ -56,7 +56,7 @@ This project uses the **[Sakila](https://dev.mysql.com/doc/sakila/en/)** MySQL s
 
 ## 📝 Reporting
 
-- **HTML and PDF Reports**: Generated using Extent Reports and located in `test-output` and `testReports`.
+- **HTML and PDF Reports**: Generated using Extent Reports and saved under `test-output/` and `testReports/`. Generated reports are excluded from version control, so run the test suite to create fresh reports and open them in your browser.
 - **ScenarioResults.xlsx**: Captures the result of each test scenario, including the status and browser used. Managed through the `Hooks` class.
 
 Example `ScenarioResults.xlsx`:
@@ -96,6 +96,14 @@ Example `ScenarioResults.xlsx`:
    - The default browser is set in `GWD`. You can override it by setting the `browser` system property:
      ```bash
      mvn test -Dbrowser=chrome
+     ```
+
+3. **Database Credentials**:
+   - JDBC tests read connection details from environment variables. Set these variables before running the tests or the default demo values will be used:
+     ```bash
+     export DB_URL=jdbc:mysql://demo.mersys.io:33906/sakila
+     export DB_USER=admin
+     export DB_PASSWORD=Techno24Study.%=
      ```
 
 ## ⚙️ Usage
